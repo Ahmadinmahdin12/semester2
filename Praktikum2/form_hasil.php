@@ -18,6 +18,7 @@
                 <th>nilai uts</th>
                 <th>nilai uas</th>
                 <th>total nilai</th>
+                <th>keterangan</th>
             </tr>
             <?php require_once "proses_nilai.php"; ?>
             <tr>
@@ -27,6 +28,7 @@
                 <td><?= $uts; ?></td>
                 <td><?= $uas; ?></td>
                 <td><?= number_format ($total_nilai, 1); ?></td>
+                <td><?= $keterangan; ?></td>
             </tr>
         </table>
     </div>

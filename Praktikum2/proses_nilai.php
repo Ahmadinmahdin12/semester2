@@ -7,8 +7,6 @@ $uts = $_GET['uts'];
 $uas = $_GET['uas']
 $total_nilai = ($tugas + $uts + $uas) / 3;
 
-80
-
 if($total_nilai > 75){
    $keterangan = "LULUS";
 } else {
