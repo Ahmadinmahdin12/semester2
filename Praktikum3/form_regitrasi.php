@@ -90,6 +90,8 @@
                     <th>domisili</th>
                     <th>program studi</th>
                     <th>skill programming</th>
+                    <th>nilai</th>
+                    <th>keterangan</th>
                     
                 </tr>
                 <?php 
@@ -110,12 +112,34 @@
                     <td><?= $domisili; ?></td>
                     <td><?= $program_studi; ?></td>
                     <td>
-                        <?php foreach($skill_user as $skill){
-                             echo $skill;
-                    } ?>
-                 </td>
-                </tr>
-                <?php } ?>
+                          <?php foreach ($skill_user as $skill){
+                    foreach ($skills as $key => $value){
+                        if ($skill = $key){
+                            $skor = $value;
+                        }
+                    }
+                    echo $skill;
+                    }; ?>
+                </td>
+                <td><?= $skor; ?></td>
+                <td><?php
+                //menentukan range
+                    $nilai_skill;
+                    if ($skor == 0){
+                        echo "Tidak Memadai";
+                    } elseif ($skor > 0 && $skor <= 40){
+                        echo "Kurang";
+                    } elseif ($skor > 40 && $skor <= 60){
+                        echo "Cukup";
+                    } elseif ($skor > 60 && $skor <= 100){
+                        echo "Baik";
+                    } elseif ($skor > 100 && $skor <= 150){
+                        echo "Sangat Baik";
+                    } ;
+
+                ?></td>
+            </tr>
+            <?php }?>
             </table>
     </div>
 </body>
