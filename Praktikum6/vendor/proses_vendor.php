@@ -6,7 +6,7 @@ require_once '../dbkoneksi.php';
    $_nama = $_POST['nama'];
    $_kota = $_POST['kota'];
    $_kontak = $_POST['kontak'];
-  
+
    $_proses = $_POST['proses'];
 
    // array data

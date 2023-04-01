@@ -42,7 +42,7 @@ require_once '../dbkoneksi.php';
         </div> 
         <input id="kota" name="kota" 
         value="" type="text" class="form-control">
-        
+
       </div>
     </div>
   </div>

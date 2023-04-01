@@ -18,7 +18,7 @@
     <input type="hidden" name="id" value="<?= $row['id']?>">
 
     <label for="">KODE </label>
-    <input type="text" name="kode" value="<?=$row['kode']?>"><br>
+    <input type="text" name="nomor" value="<?=$row['nomor']?>"><br>
 
     <label for="">NAMA </label>
     <input type="text" name="kode" value="<?=$row['nama']?>"><br><br>
@@ -42,7 +42,6 @@
     <label for="">Kartu_id</label>
     <input type="text" name="kartu_id" value="<?=$row['kartu_id']?>"><br>
 <button type="submit" nama="submit">Save</button>
-
 
    
 </form>
